@@ -1,0 +1,103 @@
+.main {
+    .hero {
+        margin-bottom: 75px;
+        .container {
+            .hero__inner {
+                display: flex;
+
+                .hero__main-section {
+                    max-width: 546px;
+                    width: 100%;
+                    margin-top: 65px;
+
+                    .hero__title {
+                        font-family: 'DM Serif Display';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 72px;
+                        line-height: 72px;
+                        letter-spacing: -0.553846px;
+                        color: #36536B;
+                        margin-bottom: 21px;
+                    }
+
+                    .hero__form {
+                        margin-bottom: 16px;
+                    }
+
+                    .hero__link {
+                        text-decoration: none;
+                        line-height: 18px;
+                        color: #6C8294;
+                        margin-left: 27px;
+                    }
+                }
+
+                .hero__img {
+                    margin: 0 auto;
+                    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .main {
+        .hero {
+            .container {
+                .hero__inner {
+                    flex-direction: column-reverse;
+
+                    align-items: center;
+
+                    .hero__main-section {
+                        text-align: center;
+                        max-width: 773px;
+                        width: 100%;
+                        margin-top: 0;
+
+                        .hero__title {
+                            font-size: 48px;
+                        }
+
+                        .hero__link {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .hero__img {
+                        max-width: 159px;
+                        width: 100%;
+                        margin-bottom: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 494px) {
+    .main {
+        .hero {
+            .container {
+                .hero__inner {
+
+                    .hero__main-section {
+                        .hero__title {
+                            font-size: 32px;
+                            line-height: 36px;
+                        }
+                    }
+
+                    .hero__img {
+                        right: 0;
+                        max-width: 127.2px;
+                        width: 100%;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

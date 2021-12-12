@@ -1,0 +1,32 @@
+.button {
+    border-radius: 24px;
+    background-color: #BA4270;
+    padding: 0 auto;
+    padding: 15px 25.5px;
+    text-decoration: none;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    transition: background-color 0.7s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #DA6D97;
+    transition: background-color 0.7s ease;
+}
+
+.btn2 {
+    border: 1px solid #FBFCFE;
+    background-color: transparent;
+    padding: 15px 32px;
+    transition: color 1s ease;
+    transition: background-color 0.7s ease;
+}
+
+.btn2:hover {
+    background-color: #FFFFFF;
+    color: #1B262F;
+    transition: color 1s ease;
+    transition: background-color 0.7s ease;
+}

@@ -1,0 +1,113 @@
+.about {
+    background-color: #1B262F;
+    margin-bottom: 100px;
+
+    .container {
+        padding: 100px 20px;
+
+        .about__inner {
+            display: flex;
+            justify-content: space-between;
+
+            .about__main-section {
+                max-width: 445px;
+                width: 100%;
+
+                .about__title {
+                    font-family: 'DM Serif Display';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 48px;
+                    line-height: 56px;
+                    letter-spacing: -0.369231px;
+                    color: #FBFCFE;
+                    margin-bottom: 24px;
+                }
+
+                .about__description {
+                    line-height: 28px;
+                    color: #FBFCFE;
+                    mix-blend-mode: normal;
+                    opacity: 0.7;
+                    margin-bottom: 48px;
+                }
+            }
+
+            .about__list {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 536px;
+                width: 100%;
+                justify-content: space-between;
+                margin-left: 30px;
+                align-items: center;
+
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1002px) {
+    .about {
+        .container {
+            .about__inner {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
+
+                .about__main-section {
+                    max-width: 456px;
+                    width: 100%;
+                }
+
+                .about__list {
+                    margin-left: 0;
+                    padding-left: 0;
+                    margin-bottom: 64px;
+                    align-items: center;
+
+                    .about__item:nth-child(3) ~ .about__item{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 482px) {
+    .about {
+        .container {
+            .about__inner {
+
+                .about__main-section {
+                    .about__title {
+                        font-size: 32px;
+                    }
+                }
+
+                .about__list {
+                    max-width: 280px;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .about__item {
+                        align-items: center;
+                        .about__img {
+                            align-items: center;
+                            max-width: 120px;
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .about__item:nth-child(2) ~ .about__item {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
