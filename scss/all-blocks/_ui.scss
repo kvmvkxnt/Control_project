@@ -1,4 +1,5 @@
 .ui {
+    margin-bottom: 100px;
     .container {
         .ui__inner {
             display: flex;
@@ -70,7 +71,67 @@
             .ui__inner {
                 .phones__img {
                     max-width: 363px;
+                    width: max-content;
+
+                    .phone__img {
+                        max-width: 168px;
+                        width: 100%;
+                    }
+
+                    .phone__img + .phone__img {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .ui {
+        .container {
+            .ui__inner {
+                .phones__img {
+                    max-width: 328px;
                     width: 100%;
+                    column-gap: 20px;
+
+                    .phone__img {
+                        max-width: 154px;
+                        width: 100%;
+                    }
+
+                    .phone__img + .phone__img {
+                        margin-left: 0;
+                    }
+                }
+
+                .ui__text {
+                    .ui__title{
+                        font-size: 36px;
+                        line-height: 36px;
+                        text-align: center;
+                        letter-spacing: -0.276923px;
+                        color: #36536B;                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .ui {
+        .container {
+            .ui__inner {
+                .phones__img {
+                    max-width: 280px;
+                    width: 100%;
+
+                    .phone__img {
+                        max-width: 130px;
+                        width: 100%;
+                    }
                 }
             }
         }

@@ -10,6 +10,7 @@
             width: 100%;
 
             .nav {
+                margin-left: 65px;
                 .nav__list {
                     .nav__item {
                         .nav__link {
@@ -43,7 +44,7 @@
     }
 }
 
-@media only screen and (max-width: 602px) {
+@media only screen and (max-width: 636px) {
     .footer {
         .container {
             .footer__inner {
@@ -52,6 +53,7 @@
 
                 .nav {
                     margin-top: 40px;
+                    margin-left: 0;
                     .nav__list {
                         padding-left: 0;
                     }
