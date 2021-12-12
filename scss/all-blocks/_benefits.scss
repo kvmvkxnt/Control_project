@@ -1,5 +1,6 @@
 .benefits {
     margin-bottom: 100px;
+
     .container {
         .benefits__inner {
             .benefits__list {
@@ -47,6 +48,7 @@
                 .benefits__list {
                     display: flex;
                     justify-content: space-between;
+                    
                     .benefits__item {
                         max-width: 223px;
                         width: 100%;

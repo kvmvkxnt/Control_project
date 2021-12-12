@@ -33,14 +33,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EDF3F8;
-    background-image: url(../images/circle1.svg), url(../images/circle1.svg), url(../images/circle1.svg);
-    background-size: 780px 780px, 780px 780px, 780px 780px;
+    background-image: url(../images/circle1.svg);
     background-repeat: no-repeat;
     background-position: 90% -100%;
 }
 
 main {
     flex-grow: 1;
+}
+
+img {
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 .container {
@@ -57,4 +61,22 @@ h1, h2, h3, p {
 
 ul {
     padding: 0;
+}
+
+@media only screen and (max-width: 1688px) {
+    body {
+        background-position: 90% 100%;
+    }
+}
+
+@media only screen and (max-width: 1278px) {
+    body {
+        background-position: 150% 70%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    body {
+        background-position: 50% 200%;
+    }
 }
