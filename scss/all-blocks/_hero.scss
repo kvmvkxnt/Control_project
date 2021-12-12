@@ -64,6 +64,12 @@
                         .hero__link {
                             margin-left: 0;
                         }
+
+                        .form {
+                            &__label {
+                                margin: 0 auto;
+                            }
+                        }
                     }
 
                     .hero__img {
