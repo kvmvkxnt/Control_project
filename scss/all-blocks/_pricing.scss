@@ -1,0 +1,296 @@
+.pricing {
+    margin-bottom: 96px;
+
+    .container {
+        .pricing__inner {
+            .pricing__title {
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 56px;
+                line-height: 56px;
+                /* identical to box height, or 100% */
+                
+                letter-spacing: -0.430769px;
+                
+                color: #36536B;
+                margin-bottom: 72px;
+            }
+
+            .pricing__list {
+                display: flex;
+                list-style-type: none;
+                padding-left: 0;
+                justify-content: space-between;
+
+                .pricing__item {
+                    max-width: 350px;
+                    width: 100%;
+
+                    .pricing__form {
+                        .pricing__label {
+                            span {
+                                display: block;
+                                width: 100%;
+                                border-top: 1px solid #36536B;
+                                // color: black;
+                                opacity: 0.25;
+                                margin-bottom: 24px;
+                            }
+
+                            .pricing__label__title {
+                                font-family: 'DM Serif Display';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 32px;
+                                line-height: 40px;
+                                /* identical to box height, or 125% */
+                                
+                                letter-spacing: -0.246154px;
+                                
+                                color: #BA4270;
+                                margin-bottom: 16px;
+                            }
+
+                            .pricing__label__description {
+                                font-family: 'Public Sans';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 15px;
+                                line-height: 28px;
+                                /* or 187% */
+                                
+                                
+                                color: #6C8294;
+                                margin-bottom: 8px;
+                            }
+
+                            .pricing__label__p {
+                                font-family: 'DM Serif Display';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 56px;
+                                line-height: 72px;
+                                /* identical to box height, or 129% */
+                                
+                                letter-spacing: -0.430769px;
+                                
+                                color: #36536B;
+                                margin-bottom: 24px;
+                            }
+
+                            .pricing__label__list {
+                                list-style-type: none;
+                                padding-left: 0;
+                                margin-bottom: 24px;
+
+                                .pricing__label__item {
+                                    .pricing__item__description {
+                                        font-family: 'Public Sans';
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 28px;
+                                        color: #36536B;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    .pricing__item__description::before {
+                                        display: inline-block;
+                                        width: 13px;
+                                        height: 11px;
+                                        background-image: url('../images/ok.svg');
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        margin-right: 24px;
+                                        content: "";
+                                        overflow: hidden;
+                                    }
+
+                                    .disabled__item {
+                                        opacity: 0.4;
+                                    }
+
+                                    .disabled__item::before {
+                                        background-image: none;
+                                    }
+                                }
+
+                                .pricing__label__item + .pricing__label__item {
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+
+                        .pricing__button {
+                            border: 1px solid #36536B;
+                            box-sizing: border-box;
+                            border-radius: 24px;
+                            font-family: 'Public Sans';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 15px;
+                            line-height: 18px;
+                            /* identical to box height */
+                            
+                            letter-spacing: -0.115385px;
+                            
+                            color: #36536B;
+                            padding: 15px 28px;
+                            background-color: transparent;
+                            transition: color 0.3s ease;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .pricing__button:hover {
+                            background-color: #36536B;
+                            cursor: pointer;
+                            color: #FBFCFE;
+                            transition: color 0.3s ease;
+                            transition: background-color 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 902px) {
+    .pricing {
+        .container {
+            .pricing__inner {
+                align-items: center;
+                
+                .pricing__title {
+                    text-align: center;
+                    font-size: 48px;
+                }
+
+                .pricing__list {
+                    .pricing__item {
+                        max-width: 223px;
+                        width: 100%;
+
+                        .pricing__form {
+                            .pricing__label {
+                                .pricing__label__title {
+                                    font-size: 24px;
+                                    line-height: 40px;
+                                    /* identical to box height, or 167% */
+                                    
+                                    text-align: center;
+                                    letter-spacing: -0.184615px;
+                                    
+                                    color: #BA4270;                                    
+                                }
+
+                                .pricing__label__description {
+                                    font-size: 15px;
+                                    line-height: 28px;
+                                    /* or 187% */
+                                    
+                                    text-align: center;
+                                    
+                                    color: #6C8294;
+                                }
+
+                                .pricing__label__p {
+                                    font-size: 48px;
+                                    line-height: 72px;
+                                    /* identical to box height, or 150% */
+                                    
+                                    text-align: center;
+                                    letter-spacing: -0.369231px;
+                                    
+                                    color: #36536B;
+                                }
+
+                                .pricing__label__list {
+                                    margin-bottom: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .pricing {
+        .container {
+            .pricing__inner {
+                .pricing__title {
+                    font-size: 32px;
+                    line-height: 36px;
+                    /* identical to box height, or 112% */
+                    
+                    text-align: center;
+                    letter-spacing: -0.246154px;
+                }
+
+                .pricing__list {
+                    flex-direction: column;
+
+                    .pricing__item {
+                        max-width: none;
+
+                        .pricing__form {
+                            .pricing__label {
+                                .pricing__label__title {
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    /* identical to box height, or 133% */
+                                    
+                                    text-align: center;
+                                    letter-spacing: -0.184615px;
+                                    
+                                }
+
+                                .pricing__label__description {
+                                    font-size: 15px;
+                                    line-height: 28px;
+                                    text-align: center;
+                                }
+
+                                .pricing__label__p {
+                                    font-size: 56px;
+                                    line-height: 72px;
+                                    /* identical to box height, or 129% */
+                                    
+                                    text-align: center;
+                                    letter-spacing: -0.430769px;
+                                }
+
+                                .pricing__label__list {
+                                    .pricing__label__item {
+                                        .pricing__item__description {
+                                            font-size: 16px;
+                                            line-height: 28px;
+                                            /* identical to box height, or 175% */
+                                            text-align: center;
+                                            
+                                            color: #36536B;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .pricing__button {
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+
+                    .pricing__item + .pricing__item {
+                        margin-top: 48px;
+                    }
+                }
+            }
+        }
+    }
+}

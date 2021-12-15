@@ -1,0 +1,107 @@
+.finsys {
+    margin-bottom: 100px;
+
+    .container--small {
+        max-width: 1015px;
+        width: 100%;
+
+        .finsys__inner {
+            .finsys__title {
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 56px;
+                line-height: 56px;
+                /* or 100% */
+                
+                letter-spacing: -0.430769px;
+                
+                color: #36536B;
+                max-width: 730px;
+                width: 100%;
+                margin-bottom: 52px;
+            }
+
+            .finsys__text {
+                .finsys__info {
+                    display: flex;
+
+                    .info__title {
+                        font-family: 'DM Serif Display';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 32px;
+                        line-height: 40px;
+                        /* identical to box height, or 125% */
+                        
+                        letter-spacing: -0.246154px;
+                        
+                        color: #36536B;
+                        max-width: 255px;
+                        width: 100%;
+                    }
+
+                    .info__description {
+                        font-family: 'Public Sans';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 28px;
+                        /* or 187% */
+                        
+                        
+                        color: #6C8294;
+                        max-width: 635px;
+                        width: 100%;
+                    }
+                }
+
+                .finsys__info + .finsys__info {
+                    margin-top: 56px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .finsys {
+        .container {
+            .finsys__inner {
+                .finsys__title {
+                    font-size: 48px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .finsys {
+        .container {
+            .finsys__inner {
+                .finsys__title {
+                    font-size: 32px;
+                    line-height: 36px;
+                    /* or 112% */
+                    
+                    text-align: center;
+                    letter-spacing: -0.246154px;
+                }
+
+                .finsys__text {
+                    .finsys__info {
+                        text-align: center;
+                        flex-direction: column;
+                        .info__title {
+                            font-size: 24px;
+                            max-width: none;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
